@@ -1,5 +1,5 @@
 `timescale 1 ns/1 ps
-module sinecosinecordic(input wire clock, input wire signed [31:0] angle, input wire signed [bitwidth-1:0] Xin, input wire signed [bitwidth-1:0] Yin, input wire select, output wire signed [bitwidth-1:0] wave_out);
+module sinecosinecordic(input wire clock, input wire signed [11:0] angle, input wire signed [bitwidth-1:0] Xin, input wire signed [bitwidth-1:0] Yin, input wire select, output wire signed [bitwidth-1:0] wave_out);
    parameter bitwidth = 12; //bitwidth of X and Y 
    input  wire signed [bitwidth-1:0] Xin;
    input  wire signed [bitwidth-1:0] Yin;
