@@ -87,6 +87,7 @@ module frequency_controller(input wire clk, input wire a, input wire b, input wi
         end
     end
 
-    assign phase_inc=(target_freq*64'd175922)>>12;
+    // assign phase_inc=(target_freq*64'd175922)>>12;
+    assign phase_inc=(target_freq*64'd3518)>>12;
 
 endmodule
