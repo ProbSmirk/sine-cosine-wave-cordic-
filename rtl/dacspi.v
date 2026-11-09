@@ -1,4 +1,13 @@
-module dacspi(input CLK, input RST, output reg D1, output reg D2, output reg CLK_OUT, output reg nSYNC, input [11:0] DATA1, input [11:0] DATA2,input START, output reg DONE);
+module dacspi(
+    input CLK,RST,
+    output reg D1, 
+    output reg D2, 
+    output reg CLK_OUT, 
+    output reg nSYNC, 
+    input [11:0] DATA1, 
+    input [11:0] DATA2,
+    input START, 
+    output reg DONE);
 
     // SPI State Machine Variables
     reg [1:0] current_state=2'b00;
